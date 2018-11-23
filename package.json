@@ -4,7 +4,21 @@
   "main": "index.js",
   "author": "Ali Havasi",
   "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "lint": "eslint --ignore-path .gitignore ."
+  },
   "dependencies": {
-    "nuxt-edge": "^2.4.0-25716240.4adbf29"
+    "@nuxtjs/vuetify": "^0.4.3",
+    "node-sass": "^4.10.0",
+    "nuxt-edge": "^2.4.0-25716240.4adbf29",
+    "sass-loader": "^7.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
   }
 }
