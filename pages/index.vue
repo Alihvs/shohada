@@ -1,5 +1,5 @@
 <template>
-    <div>Working as intended</div>
+    <div>Working as intended, yes?</div>
 </template>
 
 <script>
