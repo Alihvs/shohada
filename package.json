@@ -4,7 +4,15 @@
   "main": "index.js",
   "author": "Ali Havasi",
   "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
   "dependencies": {
-    "nuxt-edge": "^2.4.0-25716240.4adbf29"
+    "node-sass": "^4.10.0",
+    "nuxt-edge": "^2.4.0-25716240.4adbf29",
+    "sass-loader": "^7.1.0"
   }
 }
