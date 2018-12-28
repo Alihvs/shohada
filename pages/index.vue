@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="container">
         <div>Working as intended, No?</div>
         <h1>NO!</h1>
     </main>
