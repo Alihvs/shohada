@@ -1,15 +1,15 @@
 <template>
-    <div>Working as intended, No?</div>
+    <main>
+        <div>Working as intended, No?</div>
+        <h1>NO!</h1>
+    </main>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
 <style lang="scss" scoped>
-
 </style>
 
 
