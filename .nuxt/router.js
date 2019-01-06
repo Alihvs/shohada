@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
-const _7c923c52 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _1306c348 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
 
@@ -14,8 +14,11 @@ const scrollBehavior = function (to, from, savedPosition) {
   // will retain current scroll position.
   let position = false
 
-  // if no children detected
-  if (to.matched.length < 2) {
+  // if no children detected and scrollToTop is not explicitly disabled
+  if (
+    to.matched.length < 2 &&
+    to.matched.every(r => r.components.default.options.scrollToTop !== false)
+  ) {
     // scroll to the top of the page
     position = { x: 0, y: 0 }
   } else if (to.matched.some(r => r.components.default.options.scrollToTop)) {
@@ -63,7 +66,7 @@ export function createRouter() {
 
     routes: [{
       path: "/",
-      component: _7c923c52,
+      component: _1306c348,
       name: "index"
     }],
 
