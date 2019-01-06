@@ -1,5 +1,5 @@
 <template>
-    <div class="main-section">
+    <div class="main-section container">
         <the-header class="header"/>
         <nuxt class="content"/>
         <the-footer class="footer"/>
@@ -21,6 +21,7 @@ export default {
 
 .main-section {
     height: 100vh;
+    padding-top: 3rem;
     display: flex;
     flex-direction: column;
     .header {
