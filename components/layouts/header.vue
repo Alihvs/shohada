@@ -1,24 +1,15 @@
 <template>
-   <v-toolbar>
-        <v-toolbar-side-icon></v-toolbar-side-icon>
-        <v-toolbar-title>Title</v-toolbar-title>
-        <v-spacer></v-spacer>
-        <v-toolbar-items class="hidden-sm-and-down">
-            <v-btn flat>Link One</v-btn>
-            <v-btn flat>Link Two</v-btn>
-            <v-btn flat>Link Three</v-btn>
-        </v-toolbar-items>
-  </v-toolbar>
+    <section>12313</section>
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
 <style lang="scss" scoped>
-
+section {
+    border: 1px solid purple;
+}
 </style>
 
 

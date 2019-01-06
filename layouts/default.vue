@@ -1,5 +1,9 @@
 <template>
-    <nuxt/>
+    <div class="main-section">
+        <the-header class="header"/>
+        <nuxt class="content"/>
+        <the-footer class="footer"/>
+    </div>
 </template>
 
 <script>
@@ -13,8 +17,30 @@ export default {
 };
 </script>
 
-
 <style lang="scss" scoped>
+html,
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+}
+.main-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .header {
+        flex-grow: 0;
+    }
+    .footer {
+        flex-grow: 0;
+    }
+    .content {
+        flex-grow: 1;
+    }
+}
 </style>
 
 
