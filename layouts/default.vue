@@ -18,15 +18,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-html,
-body {
-    height: 100vh;
-    margin: 0;
-}
 
-body {
-    padding: 0;
-}
 .main-section {
     height: 100vh;
     display: flex;
