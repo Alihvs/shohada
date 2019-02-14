@@ -1,11 +1,21 @@
+
 html,
 body {
     height: 100vh;
     margin: 0;
+    direction: rtl;
 }
 
 .container {
   border: 1px solid red;
-  max-width: 1600px;
+  max-width: 1180px;
   margin: auto;
 }
+
+.button-simple {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100px;
+}
+
