@@ -1,7 +1,7 @@
 <template>
     <main class="main-container">
         <div>Working as intended, No?</div>
-        <h1>NO!</h1>
+        <h1>Yes ...</h1>
     </main>
 </template>
 
