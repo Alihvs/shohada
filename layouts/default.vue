@@ -1,24 +1,23 @@
 <template>
     <div class="main-section container">
-        <the-header class="header"/>
+        <the-nav class="header"/>
         <nuxt class="content"/>
         <the-footer class="footer"/>
     </div>
 </template>
 
 <script>
-import TheHeader from "~/components/layouts/header";
+import TheNav from "~/components/layouts/nav";
 import TheFooter from "~/components/layouts/footer";
 export default {
     components: {
-        TheHeader,
+        TheNav,
         TheFooter
     }
 };
 </script>
 
 <style lang="scss" scoped>
-
 .main-section {
     height: 100vh;
     padding-top: 3rem;
