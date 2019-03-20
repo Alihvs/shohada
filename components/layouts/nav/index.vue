@@ -62,14 +62,13 @@ export default {
 .nav-wrapper {
     height: 30px;
     font-size: 1rem;
-    // background-color: $primary-purple;
-    // color: $primary-white;
+    background-color: $white-1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: $m-10;
     .nav-list {
         display: flex;
-        // border: 1px solid red;
         height: 100%;
         display: flex;
         align-items: center;
