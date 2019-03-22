@@ -8,7 +8,7 @@
             <social-list/>
         </div>
         <div class="lower-section">
-            <h5>کلیه حقوق مادی و معنوی این سایت متعلق به ستاد یادواره شهدای کن می باشد</h5>
+            <span>کلیه حقوق مادی و معنوی این سایت متعلق به ستاد یادواره شهدای کن می باشد</span>
         </div>
     </footer>
 </template>
@@ -28,19 +28,26 @@ export default {
 
 .footer {
     margin-top: $m-10;
+    font-size: 1.2rem;
     .upper-section {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 0 $m-10;
+        background-color: $grey-2;
+        height: 4rem;
         .info-section {
-            border: 1px solid red;
+            font-size: 1.2rem;
         }
     }
     .lower-section {
         display: flex;
         justify-content: center;
         background-color: $black-2;
-        h5 {
-            font-size: 1.5rem;
+        min-height: 5rem;
+        padding-top: $m-5;
+        span {
+            font-size: inherit;
             color: $white-1;
         }
     }

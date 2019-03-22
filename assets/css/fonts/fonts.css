@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Iran_Sans";
+  font-weight: 100;
+  font-style: normal;
+  src: url("iransansweb_ultralight-webfont.woff2") format("woff2"),
+    url("iransansweb_ultralight-webfont.woff") format("woff"),
+    url("iransansweb_ultralight-webfont.ttf") format("truetype"),
+    url("iransansweb_ultralight-webfont.eot");
+}
+
+@font-face {
+  font-family: "Iran_Sans";
+  font-weight: 200;
+  font-style: normal;
+  src: url("iransansweb_light-webfont.woff2") format("woff2"),
+    url("iransansweb_light-webfont.woff") format("woff"),
+    url("iransansweb_light-webfont.ttf") format("truetype"),
+    url("iransansweb_light-webfont.eot");
+}
+
+@font-face {
+  font-family: "Iran_Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("iransansweb_regular-webfont.woff2") format("woff2"),
+    url("iransansweb_regular-webfont.woff") format("woff"),
+    url("iransansweb_regular-webfont.ttf") format("truetype"),
+    url("iransansweb_regular-webfont.eot");
+}
+
+@font-face {
+  font-family: "Iran_Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("iransansweb_medium-webfont.woff2") format("woff2"),
+    url("iransansweb_medium-webfont.woff") format("woff"),
+    url("iransansweb_medium-webfont.ttf") format("truetype"),
+    url("iransansweb_medium-webfont.eot");
+}
+
+@font-face {
+  font-family: "Iran_Sans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("iransansweb_bold-webfont.woff2") format("woff2"),
+    url("iransansweb_bold-webfont.woff") format("woff"),
+    url("iransansweb_bold-webfont.ttf") format("truetype"),
+    url("iransansweb_bold-webfont.eot");
+}

@@ -1,10 +1,14 @@
+// Fonts
+@import "~/assets/css/fonts/fonts.css";
+
 html,
 body {
+  font-family: "Iran Sans";
   height: 100vh;
   margin: 0;
   direction: rtl;
   font-size: 10px;
-  background-color: #e5e5e5;
+  background-color: #f1f1f1;
 }
 
 .container {
