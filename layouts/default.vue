@@ -19,7 +19,7 @@ export default {
 
 <style lang="scss" scoped>
 .main-section {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 3rem;
     display: flex;
     flex-direction: column;
