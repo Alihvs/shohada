@@ -1,5 +1,5 @@
 <template>
-    <div class="item-box-wrapper" v-lazy:background-image="image">
+    <nuxt-link to="#" class="item-box-wrapper" v-lazy:background-image="image">
         <div class="content">
             <div class="cata-wrapper">
                 <cata-item title="آخرین اخبار"/>
@@ -10,7 +10,7 @@
                 <span class="title">{{ title }}</span>
             </div>
         </div>
-    </div>
+    </nuxt-link>
 </template>
 
 <script>
@@ -20,10 +20,6 @@ export default {
         CataItem
     },
     props: {
-        type: {
-            type: Number,
-            required: true
-        },
         catas: {
             type: Array,
             default: () => []
@@ -52,6 +48,7 @@ export default {
 @import "~/assets/css/shared.scss";
 
 .item-box-wrapper {
+    text-decoration: none;
     background-color: $black-1;
     height: 30rem;
     color: $white-1;
@@ -68,10 +65,12 @@ export default {
             margin-right: $m-5;
         }
         .date {
+            margin: 0 $m-10 $m-10 0;
             color: $grey-3;
         }
         .title-wrapper {
-            padding: $m-5;
+            margin-top: $m-5;
+            padding: $m-10;
             background-color: $black-2-1;
             .title {
             }
