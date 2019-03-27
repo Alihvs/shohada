@@ -19,7 +19,8 @@ export default {
 @import "~/assets/css/shared.scss";
 
 .label-wrapper {
-    // border: 1px solid red;
+    font-weight: 200;
+    font-size: 1.6rem;
     background-color: $black-1;
     height: 3.4rem;
     color: $white-1;

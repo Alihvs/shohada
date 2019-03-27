@@ -29,6 +29,7 @@ export default {
 .footer {
     margin-top: $m-10;
     font-size: 1.2rem;
+    font-weight: 300;
     .upper-section {
         display: flex;
         justify-content: space-between;
@@ -38,6 +39,11 @@ export default {
         height: 4rem;
         .info-section {
             font-size: 1.2rem;
+            & > * {
+                &:not(:last-child) {
+                    margin-left: 5rem;
+                }
+            }
         }
     }
     .lower-section {

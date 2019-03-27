@@ -31,6 +31,10 @@ export default {
             type: String,
             default: ""
         },
+        subtitle: {
+            type: String,
+            default: ""
+        },
         title: {
             type: String,
             default: ""
@@ -61,14 +65,18 @@ export default {
         flex-direction: column;
         .title-wrapper {
             flex-grow: 1;
-            padding: $m-5;
+            padding: 0 $m-10 0 $m-10;
             .subtitle {
                 font-size: 1rem;
                 color: $grey-3;
-                margin: $m-5 0 $m-10 0;
+                margin: $m-5 0 0 0;
+                font-size: 1rem;
+                font-weight: 300;
             }
             .title {
                 font-size: 1rem;
+                font-weight: 400;
+                font-size: 1.4rem;
             }
         }
         .cata-date-wrapper {
@@ -77,12 +85,14 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: $m-5;
+            margin: auto $m-10 $m-10 $m-10;
             .cata-wrapper {
                 display: flex;
             }
             .date {
                 color: $grey-3;
+                font-size: 0.8rem;
+                font-weight: 200;
             }
         }
     }

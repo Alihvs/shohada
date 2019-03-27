@@ -21,6 +21,7 @@ export default {
 @import "~/assets/css/shared.scss";
 .item-wrapper {
     font-size: 1.5rem;
+    font-weight: 200;
     color: $black-1;
     width: 11rem;
     @include flex-center();

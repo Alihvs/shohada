@@ -67,12 +67,16 @@ export default {
         .date {
             margin: 0 $m-10 $m-10 0;
             color: $grey-3;
+            font-size: 1.2rem;
+            font-weight: 100;
         }
         .title-wrapper {
             margin-top: $m-5;
             padding: $m-10;
             background-color: $black-2-1;
             .title {
+                font-size: 2rem;
+                font-weight: 500;
             }
         }
     }

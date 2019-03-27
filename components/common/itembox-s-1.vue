@@ -73,6 +73,8 @@ export default {
         .date {
             margin: 0 $m-10 $m-10 0;
             color: $grey-3;
+            font-size: 1rem;
+            font-weight: 100;
         }
     }
     .bottom-section {
@@ -85,9 +87,13 @@ export default {
                 font-size: 1.1rem;
                 color: $grey-3;
                 margin: $m-5 0 $m-10 0;
+                font-size: 1.2rem;
+                font-weight: 300;
             }
             .title {
                 font-size: 1.3rem;
+                font-weight: 400;
+                font-size: 1.6rem;
             }
         }
     }

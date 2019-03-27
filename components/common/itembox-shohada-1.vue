@@ -9,7 +9,57 @@
         <div class="bottom-section">
             <div class="title-wrapper">
                 <h5 class="title" v-html="addShahid(title)"></h5>
-                <span class="details">{{ details }}</span>
+                <!-- <span class="details">{{ details }}</span> -->
+                <ul class="details">
+                    <li>
+                        <span>تاریخ شهادت:</span>
+                        <span>{{ details.date }}</span>
+                    </li>
+                    <li>
+                        <span>سن شهادت:</span>
+                        <span>{{ details.age }}</span>
+                    </li>
+                    <li>
+                        <span>محل شهادت:</span>
+                        <span>{{ details.location }}</span>
+                    </li>
+                    <li>
+                        <span>نام عملیات:</span>
+                        <span>{{ details.operation }}</span>
+                    </li>
+                    <li>
+                        <span>مزار:</span>
+                        <span>{{ details.tomb }}</span>
+                    </li>
+                    <li>
+                        <span>یگان خدمتی:</span>
+                        <span>{{ details.yegan }}</span>
+                    </li>
+                    <li>
+                        <span>تاریخ تولد:</span>
+                        <span>{{ details.birthDate }}</span>
+                    </li>
+                    <li>
+                        <span>تاریخ تولد:</span>
+                        <span>{{ details.birthPlace }}</span>
+                    </li>
+                    <li>
+                        <span>نام محله:</span>
+                        <span>{{ details.nighbourhood }}</span>
+                    </li>
+                    <li>
+                        <span>تحصیلات:</span>
+                        <span>{{ details.education }}</span>
+                    </li>
+                    <li>
+                        <span>شغل:</span>
+                        <span>{{ details.occupation }}</span>
+                    </li>
+                    <li>
+                        <span>وضعیت تأهل:</span>
+                        <span>{{ details.maritalStatus }}</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </nuxt-link>
@@ -31,8 +81,8 @@ export default {
             default: ""
         },
         details: {
-            type: String,
-            default: ""
+            type: Object,
+            default: () => {}
         },
         image: {
             type: String,
@@ -69,7 +119,7 @@ export default {
         flex-basis: 30%;
         .cata-wrapper {
             display: flex;
-            margin-right: $m-5;
+            margin: $m-10;
         }
     }
     .bottom-section {
@@ -79,12 +129,17 @@ export default {
         .title-wrapper {
             padding: $m-10;
             .title {
-                font-size: 1.1rem;
-                color: $grey-3;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $black-2;
                 margin: $m-5 0 $m-10 0;
             }
-            .title {
-                font-size: 1.3rem;
+            .details {
+                font-size: 1.4rem;
+                font-weight: 300;
+                & > * {
+                    margin: 0.2rem;
+                }
             }
         }
     }

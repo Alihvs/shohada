@@ -82,7 +82,8 @@ export default {
                 margin: $m-5 0 $m-10 0;
             }
             .title {
-                font-size: 1.3rem;
+                font-size: 1.6rem;
+                font-weight: 400;
             }
         }
     }
