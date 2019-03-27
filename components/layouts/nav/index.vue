@@ -60,7 +60,7 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/css/shared.scss";
 .nav-wrapper {
-    height: 30px;
+    height: 5rem;
     font-size: 1rem;
     background-color: $white-1;
     display: flex;

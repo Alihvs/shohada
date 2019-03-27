@@ -1,6 +1,14 @@
 <template>
     <ul class="social-links-wrapper">
-        <li class="social-item" v-for="(item, index) in items" :key="index">*</li>
+        <li>
+            <img src="/svg/telegram.svg" alt="telegram">
+        </li>
+        <li>
+            <img src="/svg/instagram.svg" alt="instagram">
+        </li>
+        <li>
+            <img src="/svg/google.svg" alt="google">
+        </li>
     </ul>
 </template>
 
@@ -27,11 +35,21 @@ export default {
 };
 </script>
 
-
 <style lang="scss" scoped>
+@import "~/assets/css/shared.scss";
+
 .social-links-wrapper {
-    display: flex;
     border: 1px solid red;
+    max-height: 100%;
+    display: flex;
+    @include flex-center();
+    li {
+        img {
+            border: 1px solid red;
+            height: 3rem;
+            width: 3rem;
+        }
+    }
 }
 </style>
 
