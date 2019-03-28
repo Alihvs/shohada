@@ -27,8 +27,11 @@ ul {
   color: #f53636;
 }
 
-input {
+input,
+textarea {
   font-family: IRANSans !important;
+  font-size: 1.6rem;
+  font-weight: 300;
 }
 
 input:focus,
@@ -52,5 +55,10 @@ button:focus {
   }
   .content {
     flex-grow: 1;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
   }
 }
