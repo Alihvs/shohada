@@ -51,7 +51,8 @@ export default {
 @import "~/assets/css/shared.scss";
 
 .item-box-wrapper {
-    height: 30rem;
+    // height: 27rem;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     text-decoration: none;

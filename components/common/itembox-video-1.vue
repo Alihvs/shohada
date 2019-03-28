@@ -1,6 +1,9 @@
 <template>
     <nuxt-link to="#" class="item-box-wrapper" v-lazy:background-image="image">
         <div class="top-section">
+            <div class="play-icon-wrapper">
+                <img src="/svg/play.svg" class="play-icon" alt="play">
+            </div>
             <div class="cata-wrapper">
                 <cata-item title="آخرین اخبار"/>
                 <cata-item title="آخرین اخبار"/>
@@ -51,6 +54,7 @@ export default {
     flex-direction: column;
     text-decoration: none;
     .top-section {
+        position: relative;
         color: $white-1;
         background-color: $black-1;
         display: flex;
@@ -61,6 +65,17 @@ export default {
         background-size: cover;
         background-position: center;
         flex-basis: 60%;
+        .play-icon-wrapper {
+            @include absolute-center();
+            border-radius: 50%;
+            height: 4.5rem;
+            width: 4.5rem;
+            background-color: $grey-3;
+            @include flex-center-vertical();
+            .play-icon {
+                transform: translateX(-50%);
+            }
+        }
         .cata-wrapper {
             display: flex;
             margin-right: $m-5;

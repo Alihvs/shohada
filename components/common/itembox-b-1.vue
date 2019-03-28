@@ -52,14 +52,16 @@ export default {
     background-color: $black-1;
     height: 30rem;
     color: $white-1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    // border: 1px solid red;
     .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
         .cata-wrapper {
             display: flex;
             margin-right: $m-5;

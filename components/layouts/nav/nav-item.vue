@@ -1,5 +1,7 @@
 <template>
-    <li class="item-wrapper">{{ label }}</li>
+    <li class="item-wrapper">
+        <nuxt-link :to="`/${page}`">{{ label }}</nuxt-link>
+    </li>
 </template>
 
 <script>
@@ -9,7 +11,7 @@ export default {
             type: String,
             required: true
         },
-        component: {
+        page: {
             type: String,
             required: true
         }
@@ -22,11 +24,18 @@ export default {
 .item-wrapper {
     font-size: 1.5rem;
     font-weight: 200;
-    color: $black-1;
     width: 11rem;
     @include flex-center();
     &:not(:last-child) {
         border-left: 1px solid $grey-2;
+    }
+    a {
+        color: $black-1;
+        text-decoration: none;
+    }
+
+    .nuxt-link-exact-active {
+        color: $red-1;
     }
 }
 </style>

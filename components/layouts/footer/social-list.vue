@@ -39,15 +39,18 @@ export default {
 @import "~/assets/css/shared.scss";
 
 .social-links-wrapper {
-    border: 1px solid red;
     max-height: 100%;
     display: flex;
     @include flex-center();
     li {
+        border-radius: 50%;
+        background-color: $grey-3;
+        height: 3rem;
+        width: 3rem;
+        margin: $m-5;
+        @include flex-center();
         img {
-            border: 1px solid red;
-            height: 3rem;
-            width: 3rem;
+            padding: 0.9rem;
         }
     }
 }

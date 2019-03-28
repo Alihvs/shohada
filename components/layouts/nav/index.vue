@@ -5,7 +5,7 @@
                 v-for="(item, index) in links"
                 :key="index"
                 :label="item.label"
-                :component="item.component"
+                :page="item.page"
             />
         </ul>
         <search-component/>
@@ -24,31 +24,31 @@ export default {
         return {
             links: [
                 {
-                    component: "home",
+                    page: "",
                     label: "صفحه اصلی"
                 },
                 {
-                    component: "news",
+                    page: "news",
                     label: "آخرین اخبار"
                 },
                 {
-                    component: "video-news",
+                    page: "video-news",
                     label: "خبرهای تصویری"
                 },
                 {
-                    component: "daily-photo",
+                    page: "photo",
                     label: "عکس روز"
                 },
                 {
-                    component: "video",
+                    page: "video",
                     label: "ویديو"
                 },
                 {
-                    component: "shohada",
+                    page: "shohada",
                     label: "گنجینه شهدا"
                 },
                 {
-                    component: "contact-us",
+                    page: "contact",
                     label: "ارتباط با ما"
                 }
             ]

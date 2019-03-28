@@ -8,12 +8,14 @@
                 :catas="['آخرین اخبار', 'یادواره شهدا']"
             />
             <itembox-s-1
+                class="smallbox-1"
                 date="چهارشنبه - ۲ فروردین ۱۳۹۸"
                 subtitle="یادواره شهدای کن با حظور سردار سلیمانی"
                 title="شامگاه روز پنجشنبه مراسم اولین یادواره شهدا کن با حضور سردار قاسم سلیمانی در حسینیه نور این منطقه از تهران برگزار شد."
                 :catas="['آخرین اخبار', 'یادواره شهدا']"
             />
             <itembox-s-1
+                class="smallbox-1"
                 date="چهارشنبه - ۲ فروردین ۱۳۹۸"
                 subtitle="یادواره شهدای کن با حظور سردار سلیمانی"
                 title="شامگاه روز پنجشنبه مراسم اولین یادواره شهدا کن با حضور سردار قاسم سلیمانی در حسینیه نور این منطقه از تهران برگزار شد."
@@ -81,6 +83,7 @@
         <div class="third-row">
             <label-box title="عکس روز"/>
             <itembox-s-1
+                class="smallbox-1"
                 date="چهارشنبه - ۲ فروردین ۱۳۹۸"
                 subtitle="یادواره شهدای کن با حظور سردار سلیمانی"
                 title="شامگاه روز پنجشنبه مراسم اولین یادواره شهدا کن با حضور سردار قاسم سلیمانی در حسینیه نور این منطقه از تهران برگزار شد."
@@ -148,7 +151,7 @@ export default {
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 10px;
-    grid-gap: 10px;
+    grid-gap: 1rem;
     justify-items: stretch;
     align-items: stretch;
     .first-row {
@@ -179,6 +182,10 @@ export default {
             }
         }
     }
+}
+
+.smallbox-1 {
+    height: 30rem;
 }
 </style>
 
