@@ -1,6 +1,7 @@
 <template>
     <div class="label-wrapper">
         <span>{{ title }}</span>
+        <slot/>
     </div>
 </template>
 
@@ -25,7 +26,10 @@ export default {
     height: 3.4rem;
     color: $white-1;
     padding-right: $m-10;
-    @include flex-center-vertical();
+    padding-left: $m-10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 </style>
 
