@@ -5,8 +5,10 @@
 <script>
 export default {
     props: {
-        type: String,
-        default: ""
+        placeholder: {
+            type: String,
+            default: ""
+        }
     }
 };
 </script>
