@@ -23,6 +23,7 @@ export default {
     margin-left: 2rem;
     @include flex-center-vertical();
     .search-input {
+        background-color: transparent;
         border: none;
         font-size: 1.6rem;
         font-weight: 300;

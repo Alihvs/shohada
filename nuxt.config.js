@@ -37,7 +37,7 @@ export default {
   },
 
   // Global stylesheets
-  css: ['~/assets/css/global.scss'],
+  css: ['~/assets/css/global.scss', 'vue-multiselect/dist/vue-multiselect.min.css'],
   // Plugins
   plugins: [{ src: '~/plugins/vue-lazyload' }],
 };

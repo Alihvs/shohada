@@ -1,16 +1,9 @@
 <template>
     <nuxt-link to="#" class="item-box-wrapper" v-lazy:background-image="image">
-        <div class="top-section">
-            <div class="cata-wrapper">
-                <cata-item title="آخرین اخبار"/>
-                <cata-item title="آخرین اخبار"/>
-            </div>
-            <span class="date">{{ date }}</span>
-        </div>
+        <div class="top-section"></div>
         <div class="bottom-section">
             <div class="title-wrapper">
-                <h5 class="subtitle">{{ subtitle }}</h5>
-                <span class="title">{{ title }}</span>
+                <span class="title" v-html="addShahid(title)"></span>
             </div>
         </div>
     </nuxt-link>
@@ -23,25 +16,18 @@ export default {
         CataItem
     },
     props: {
-        catas: {
-            type: Array,
-            default: () => []
-        },
-        date: {
-            type: String,
-            default: ""
-        },
         title: {
-            type: String,
-            default: ""
-        },
-        subtitle: {
             type: String,
             default: ""
         },
         image: {
             type: String,
             default: ""
+        }
+    },
+    methods: {
+        addShahid(name) {
+            return `<span class="shahid">شهید </span>${name}`;
         }
     }
 };
@@ -51,8 +37,8 @@ export default {
 @import "~/assets/css/shared.scss";
 
 .item-box-wrapper {
-    height: 26.2rem;
-    // min-height: auto;
+    // height: 27rem;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -66,31 +52,17 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        flex-basis: 50%;
-        .cata-wrapper {
-            display: flex;
-            margin-right: $m-5;
-        }
-        .date {
-            margin: 0 $m-10 $m-10 0;
-            color: $grey-3;
-            font-size: 1rem;
-            font-weight: 100;
-        }
+        // flex-basis: 50%;
+        flex-grow: 1;
     }
     .bottom-section {
         color: $black-2;
         background-color: $white-1;
-        flex-basis: 50%;
+        // flex-basis: 20%;
+        height: 5rem;
+        flex-grow: 0;
         .title-wrapper {
             padding: $m-10;
-            .subtitle {
-                font-size: 1.1rem;
-                color: $grey-3;
-                margin: $m-5 0 $m-10 0;
-                font-size: 1.2rem;
-                font-weight: 300;
-            }
             .title {
                 font-size: 1.3rem;
                 font-weight: 400;

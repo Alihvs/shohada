@@ -14,7 +14,8 @@
     "node-sass": "^4.10.0",
     "nuxt-edge": "^2.4.0-25716240.4adbf29",
     "sass-loader": "^7.1.0",
-    "vue-lazyload": "^1.2.6"
+    "vue-lazyload": "^1.2.6",
+    "vue-multiselect": "^2.1.4"
   },
   "devDependencies": {
     "eslint": "^5.9.0",

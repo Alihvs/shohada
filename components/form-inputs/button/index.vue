@@ -25,5 +25,8 @@ export default {
     font-size: 1.6rem;
     font-weight: 300;
     color: $white-1;
+    min-width: 100%;
+    border: none;
+    outline: none;
 }
 </style>

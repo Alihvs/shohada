@@ -16,3 +16,19 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin spaceout($value) {
+  & > * {
+    &:not(:last-child) {
+      margin-bottom: $value;
+    }
+  }
+}
+
+@mixin spaceout-horizontal($value) {
+  & > * {
+    &:not(:last-child) {
+      margin-bottom: $value;
+    }
+  }
+}

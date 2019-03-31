@@ -78,6 +78,12 @@ export default {
 .sidebar-wrapper {
     display: grid;
     grid-gap: 1rem;
+    .sidebar-items-wrapper {
+        // height: 86rem;
+        // & > * {
+        //     height: auto;
+        // }
+    }
 }
 </style>
 

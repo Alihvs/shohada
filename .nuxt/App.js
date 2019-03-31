@@ -3,6 +3,8 @@ import NuxtLoading from './components/nuxt-loading.vue'
 
 import '../assets/css/global.scss'
 
+import '../node_modules/vue-multiselect/dist/vue-multiselect.min.css'
+
 import _6f6c098b from '../layouts/default.vue'
 import _6705edda from '../layouts/news-column.vue'
 
