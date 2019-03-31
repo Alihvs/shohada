@@ -3,12 +3,15 @@ import NuxtLoading from './components/nuxt-loading.vue'
 
 import '../assets/css/global.scss'
 
-import _6f6c098b from '../layouts/default.vue'
+import '../node_modules/vue-multiselect/dist/vue-multiselect.min.css'
 
-const layouts = { "_default": _6f6c098b }
+import _6f6c098b from '../layouts/default.vue'
+import _6705edda from '../layouts/news-column.vue'
+
+const layouts = { "_default": _6f6c098b,"_news-column": _6705edda }
 
 export default {
-  head: {"meta":[],"link":[],"style":[],"script":[]},
+  head: {"title":"شهدای کن","htmlAttrs":{"lang":"fa","dir":"rtl"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"سایت یادواره شهدای کن","hid":"description"},{"name":"apple-mobile-web-app-title","content":"Shohada Kan"},{"name":"application-name","content":"Shohada Kan"}],"link":[{"rel":"apple-touch-icon","sizes":"180x180","href":"\u002Ffavicons\u002Fapple-touch-icon.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"32x32","href":"\u002Ffavicons\u002Ffavicon-32x32.png"},{"rel":"icon","type":"image\u002Fpng","sizes":"16x16","href":"\u002Ffavicons\u002Ffavicon-16x16.png"},{"rel":"manifest","href":"\u002Ffavicons\u002Fsite.webmanifest"},{"rel":"shortcut icon","href":"\u002Ffavicons\u002Ffavicon.ico"}],"style":[],"script":[]},
 
   render(h, props) {
     const loadingEl = h('NuxtLoading', { ref: 'loading' })

@@ -5,7 +5,7 @@
                 v-for="(item, index) in links"
                 :key="index"
                 :label="item.label"
-                :component="item.component"
+                :page="item.page"
             />
         </ul>
         <search-component/>
@@ -24,31 +24,31 @@ export default {
         return {
             links: [
                 {
-                    component: "home",
+                    page: "",
                     label: "صفحه اصلی"
                 },
                 {
-                    component: "news",
+                    page: "news",
                     label: "آخرین اخبار"
                 },
                 {
-                    component: "video-news",
+                    page: "video-news",
                     label: "خبرهای تصویری"
                 },
                 {
-                    component: "daily-photo",
+                    page: "photo",
                     label: "عکس روز"
                 },
                 {
-                    component: "video",
+                    page: "video",
                     label: "ویديو"
                 },
                 {
-                    component: "shohada",
+                    page: "shohada",
                     label: "گنجینه شهدا"
                 },
                 {
-                    component: "contact-us",
+                    page: "contact",
                     label: "ارتباط با ما"
                 }
             ]
@@ -60,16 +60,15 @@ export default {
 <style lang="scss" scoped>
 @import "~/assets/css/shared.scss";
 .nav-wrapper {
-    height: 30px;
+    height: 5rem;
     font-size: 1rem;
-    // background-color: $primary-purple;
-    // color: $primary-white;
+    background-color: $white-1;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: $m-10;
     .nav-list {
         display: flex;
-        // border: 1px solid red;
         height: 100%;
         display: flex;
         align-items: center;

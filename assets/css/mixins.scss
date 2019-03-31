@@ -3,3 +3,32 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin flex-center-vertical() {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+@mixin absolute-center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin spaceout($value) {
+  & > * {
+    &:not(:last-child) {
+      margin-bottom: $value;
+    }
+  }
+}
+
+@mixin spaceout-horizontal($value) {
+  & > * {
+    &:not(:last-child) {
+      margin-bottom: $value;
+    }
+  }
+}
