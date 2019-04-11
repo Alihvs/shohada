@@ -2,6 +2,12 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+const _319d2b67 = () => interopDefault(import('../pages/contact.vue' /* webpackChunkName: "pages/contact" */))
+const _fcf9e4c8 = () => interopDefault(import('../pages/news.vue' /* webpackChunkName: "pages/news" */))
+const _6d014c39 = () => interopDefault(import('../pages/photo.vue' /* webpackChunkName: "pages/photo" */))
+const _ef74a392 = () => interopDefault(import('../pages/shohada.vue' /* webpackChunkName: "pages/shohada" */))
+const _220053fc = () => interopDefault(import('../pages/video.vue' /* webpackChunkName: "pages/video" */))
+const _675ee424 = () => interopDefault(import('../pages/video-news.vue' /* webpackChunkName: "pages/video-news" */))
 const _6f6ae6d9 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 Vue.use(Router)
@@ -65,6 +71,30 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
+      path: "/contact",
+      component: _319d2b67,
+      name: "contact"
+    }, {
+      path: "/news",
+      component: _fcf9e4c8,
+      name: "news"
+    }, {
+      path: "/photo",
+      component: _6d014c39,
+      name: "photo"
+    }, {
+      path: "/shohada",
+      component: _ef74a392,
+      name: "shohada"
+    }, {
+      path: "/video",
+      component: _220053fc,
+      name: "video"
+    }, {
+      path: "/video-news",
+      component: _675ee424,
+      name: "video-news"
+    }, {
       path: "/",
       component: _6f6ae6d9,
       name: "index"

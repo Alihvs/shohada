@@ -1,21 +1,121 @@
+// fonts
+@import "~/assets/css/fonts/fonts.css";
 
 html,
 body {
-    height: 100vh;
-    margin: 0;
-    direction: rtl;
+  font-family: IRANSans !important;
+  height: 100vh;
+  margin: 0;
+  direction: rtl;
+  font-size: 10px;
+  background-color: #f1f1f1;
 }
 
 .container {
-  border: 1px solid red;
-  max-width: 1180px;
+  max-width: 1200px;
   margin: auto;
+  padding: 0 10px;
 }
 
-.button-simple {
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shahid {
+  color: #f53636;
+}
+
+input,
+textarea,
+button {
+  font-family: IRANSans !important;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+input {
   border: none;
   outline: none;
-  background-color: transparent;
-  width: 100px;
+  background-color: #e5e5e5;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  &::placeholder {
+    color: #a4a4a4;
+  }
 }
 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+// Homepage styles
+.main-section {
+  min-height: 100vh;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  .header {
+    flex-grow: 0;
+  }
+  .footer {
+    flex-grow: 0;
+  }
+  .content {
+    flex-grow: 1;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+// TODO: This is retarded
+// vue multiselect
+.multiselect {
+  margin: 0 !important;
+  & * {
+    border-radius: 0 !important;
+    // max-height: 3.2rem !important;
+  }
+  &__tags {
+    max-height: 3.2rem !important;
+    min-height: 3.2rem !important;
+    padding: 0 !important;
+    padding-right: 1rem !important;
+    background-color: #e5e5e5 !important;
+  }
+  &__input {
+    border: none !important;
+    color: #a4a4a4 !important;
+    background-color: #e5e5e5 !important;
+  }
+  &__single {
+    background-color: #e5e5e5 !important;
+    color: #a4a4a4 !important;
+  }
+  // &__select {
+  //   max-height: 3.2rem !important;
+  //   &::before {
+  //     content: "" !important;
+  //     background-image: url("/svg/arrow.svg");
+  //     background-repeat: no-repeat;
+  //     background: cover;
+  //     background-position: center;
+  //     transform: rotate(45deg) !important;
+  //   }
+  // }
+  &__placeholder {
+    margin: 0 !important;
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+}
